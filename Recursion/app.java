@@ -20,17 +20,31 @@ class App {
 
     //     System.out.println(sum == 15 ? sum : "");
     // }
-
-    // Q3: Factorial
+    
+    /* 
+    Q3: Factorial
     public static int factorial(int n) {
         if(n==1) {
             return 1;
         }
         return n * factorial(n-1); 
     }
+    */
+
+    /* Q4: Fibonacci Series */
+    public static void fSeries(int a, int b, int n) {
+        if(n == 0) {
+            return;
+        }
+
+        System.out.print(a + " ");
+        fSeries(b, a+b, n-1);
+    }
+    
     public static void main(String args[]) {
         // nNumbers(5, 0);
         // q1(1);
-        System.out.println(factorial(5));
+        // System.out.println(factorial(5));
+        fSeries(0, 1, 6);
     }
 }
