@@ -46,12 +46,21 @@ class App {
     Example: "hello" → "olleh"
      */
     // Using for Loop
+    // public static void reverseFunc(String letter) {
+    //     System.out.println("Previous String: " + letter);
+    //     System.out.print("New String: ");
+    //     for(int i=letter.length()-1; i>=0; i--) {
+    //         System.out.print(letter.charAt(i));
+    //     }
+    // }
+
+    // Using Recursive
     public static void reverseFunc(String letter) {
-        System.out.println("Previous String: " + letter);
-        System.out.print("New String: ");
-        for(int i=letter.length()-1; i>=0; i--) {
-            System.out.print(letter.charAt(i));
-        }
+        if(letter.isEmpty()) return;
+        char l = letter.charAt(0);
+        String rest = letter.substring(1);
+        reverseFunc(rest);
+        System.out.print(l);
     }
 
     public static void main(String args[]) {
