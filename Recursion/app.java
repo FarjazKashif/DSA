@@ -32,19 +32,34 @@ class App {
     */
 
     /* Q4: Fibonacci Series */
-    public static void fSeries(int a, int b, int n) {
-        if(n == 0) {
-            return;
-        }
+    // public static void fSeries(int a, int b, int n) {
+    //     if(n == 0) {
+    //         return;
+    //     }
 
-        System.out.print(a + " ");
-        fSeries(b, a+b, n-1);
-    }
+    //     System.out.print(a + " ");
+    //     fSeries(b, a+b, n-1);
+    // }
     
+    /*
+    Reverse a string using recursion.
+    Example: "hello" → "olleh"
+     */
+    // Using for Loop
+    public static void reverseFunc(String letter) {
+        System.out.println("Previous String: " + letter);
+        System.out.print("New String: ");
+        for(int i=letter.length()-1; i>=0; i--) {
+            System.out.print(letter.charAt(i));
+        }
+    }
+
     public static void main(String args[]) {
         // nNumbers(5, 0);
         // q1(1);
         // System.out.println(factorial(5));
-        fSeries(0, 1, 6);
+        // fSeries(0, 1, 6);
+        reverseFunc("Farjaz");
     }
+
 }

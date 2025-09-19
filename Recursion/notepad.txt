@@ -1,0 +1,13 @@
+Reverse a string using recursion.
+Example: "hello" → "olleh"
+
+Check if a string is palindrome.
+Example: "madam" → true, "hello" → false
+
+Find the maximum element in an array.
+
+Count the number of digits in a number.
+Example: 12345 → 5
+
+Power function (x^n).
+Example: 2^5 = 32
